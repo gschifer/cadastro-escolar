@@ -1,0 +1,24 @@
+.bi-person-plus-fill{
+  height: 80px;
+  padding-bottom: 11px;
+  margin-right: 12px;
+}
+
+.container {
+  width: 700px;
+}
+
+h1{
+  text-align: center;
+}
+
+#login {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.alert-danger{
+  text-align: center;
+  
+}
+
