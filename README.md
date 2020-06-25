@@ -3,7 +3,7 @@
 This ongoin project is a crud that allows the registration of a student, classes,
 users and restricted access for valid members and also allows the visualization of
 classes and students that are stored in our data base. 
-It will be included others applications later that are missing as example, the insertion of student inside a class.
+It will be included others applications later that are missing, for example, the insertion of student inside a class.
 
 
 
