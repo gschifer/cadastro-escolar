@@ -16,7 +16,8 @@ It will be included others applications later that are missing, for example, the
   - After that, check the output in your browse.
 
 # User flow
-
+  
+  - Acess the file "login-page.php".
   - In order to you access all applications you need to register a user in the upper right corner of the site.
   - After you conclude the registration, you can now access using your login and password.
   - All the options are intuitive so you can easily add, edit, delete and search for students and classes.
