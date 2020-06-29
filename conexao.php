@@ -3,7 +3,7 @@
 $localhost = "localhost"; 
 $usuario = "root"; 
 $senha = ""; 
-$dbname = "login";
+$dbname = "cadastro_escola";
 
 $conexao = new mysqli($localhost, $usuario, $senha, $dbname);
 
