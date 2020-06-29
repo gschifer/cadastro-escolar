@@ -12,7 +12,7 @@ It will be included others applications later that are missing, for example, the
   - Download all the files
   - Copy and paste the extracted files into your htdocs folder.
   - Remove the index.html file the serves us only to bring us our Front-end page static that is hosted by GitHub Pages.
-  - Inside the folder you extracted, you can see the "cadastro_escola.sql" file, import it to your MySQL database.
+  - Inside the folder you extracted, you can see that contains a folder named "db dump" and inside of it, you can see the "cadastro_escola.sql" file, import it to your MySQL database.
   - Configure the credentials inside of conexao.php, depending on your local setting.
   - After that, check the output in your browser.
 
@@ -37,7 +37,7 @@ It will be included others applications later that are missing, for example, the
   - Baixe todos os arquivos.
   - Copie e cole todos os arquivos dentro da pasta htdocs do xampp.
   - Exclua o arquivo index.html que apenas serve para mostrar o Front-end do nosso site.
-  - Dentro da pasta que você estraiu os arquivos, você pode ver que contém um arquivo chamado "cadastro_escola.sql", importe-o para seu banco de dados MySQL.
+  - Dentro da pasta que você extraiu os arquivos, você pode ver que contém uma pasta chamada "db dump" e um arquivo dentro dela chamado "cadastro_escola.sql", importe-o para seu banco de dados MySQL.
   - Configure os dados dentro do arquivo "conexao.php", dependendo da configuração local do seu sistema.
   - Após concluir os passos, você pode ver a aplicação em andamento através do seu navegador.
 
