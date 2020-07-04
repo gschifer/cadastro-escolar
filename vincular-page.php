@@ -31,7 +31,7 @@ include('conexao.php');
         </div>
     </nav>
 
-    <form method="POST">
+    <form method="POST" action="vincula_controller.php">
         <div class=" col-md-12 container mt-5 jumbotron">
             <h1 class="display-4">Inclusão
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ include('conexao.php');
             <div>
                 <div class="form-group mt-5">
                     <label for="exampleFormControlSelect2">Alunos cadastrados</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <select multiple class="form-control" name="aluno_selecionado" id="exampleFormControlSelect2">
                         <?php
 
                         $select = "SELECT * FROM alunos";
@@ -55,10 +55,9 @@ include('conexao.php');
                             echo "<option class='text-danger'>Não há alunos cadastrados no momento.</option>";
                         } else {
                             while ($row = $result->fetch_assoc()) {
-                                echo "<option>" . $row['nome'] . "</option>";
+                                echo "<option value='" . $row['matrícula'] . "'>" . $row['nome'] . "</option>";
                             }
                         }
-
 
                         ?>
                     </select>
@@ -67,7 +66,7 @@ include('conexao.php');
             <div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Turmas cadastradas</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <select multiple class="form-control" name="turma_selecionada" id="exampleFormControlSelect2">
                         <?php
 
                         $select = "SELECT * FROM turmas";
@@ -77,7 +76,9 @@ include('conexao.php');
                             echo "<option class='text-danger'>Não há turmas cadastradas no momento.</option>";
                         } else {
                             while ($row = $result->fetch_assoc()) {
-                                echo "<option>" . "Turma: " . $row['numero_turma'] . " - Professor: " . $row['nome_professor'] . "</option>";
+                                echo "<option value='" . $row['numero_turma'] . "'>" . "Turma: " .
+                                    $row['numero_turma'] . " - Professor: " . $row['nome_professor'] . " 
+                                    - Quantidade de vagas: " . $row['quantidade_vagas'] . "</option>";
                             }
                         }
 
@@ -85,7 +86,7 @@ include('conexao.php');
                     </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-success w-100 mt-3">Vincular</button>
+            <button type="submit" class="btn btn-success w-100 mt-3">Vincular</button>
         </div>
     </form>
 
