@@ -17,7 +17,7 @@ session_start();
 <body>
 
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-          <a href="login-page.php" class="navbar-brand ml-5">Escola X</a>
+          <a href="index.php" class="navbar-brand ml-5">Escola X</a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto mr-5">
               <li class="nav-item ">
@@ -33,7 +33,7 @@ session_start();
         ?>
         <div class="alert alert-success">
             Usuário cadastrado com sucesso!
-            <p>Faça login informando seu usuário e senha <a href="login-page.php">aqui.</a></p>
+            <p>Faça login informando seu usuário e senha <a href="index.php">aqui.</a></p>
         </div>
         <?php
         endif;
